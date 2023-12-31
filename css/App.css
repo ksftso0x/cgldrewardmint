@@ -1,0 +1,67 @@
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 0rem 0;
+}
+
+b {
+  color: var(--highlight1);
+}
+
+.App h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 0rem 0;
+}
+.App h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 0rem 0;
+}
+.App .btn {
+  margin-top: 5em;
+}
+
+.neon-border {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #fff;
+}
+
+.btn {
+  border: 2px solid var(--highlight1);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--highlight1);
+  background-color: var(--bg2);
+  color: var(--highlight1);
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.5s;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--highlight1);
+  color: var(--bg2);
+  scale: 1.1;
+}
+
+.btn:active {
+  background-color: var(--highlight1);
+  color: var(--bg2);
+  box-shadow: 0 0 5px --highlight1 inset;
+  scale: 0.9;
+}/*# sourceMappingURL=App.css.map */

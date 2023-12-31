@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/Roboto-Medium.ttf);
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg1);
+  color: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--font);
+  text-shadow: -1px -1px 0 var(--bg2), 1px -1px 0 var(--bg2), -1px 1px 0 var(--bg2), 1px 1px 0 var(--bg2);
+}
+
+:root {
+  --white: #d6d6d6ff;
+  --highlight1: #fcbf49;
+  --highlight2: #f77f00;
+  --bg1: #1a1e24;
+  --bg2: #282c34;
+}
+
+.body {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg-wrap {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  .stars {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  .navigation {
+    background-color: var(--bg2);
+    padding: 0.5em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    box-shadow: 0 0 1em #00000060;
+    a {
+      font-size: 1.5em;
+      margin: 0.1em;
+    }
+  }
+}
+
+footer {
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: var(--highlight1);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  margin: 0 0 0rem 0;
+  transition: 0.25s;
+  &:hover {
+    transition: 0.5s;
+    color: var(--highlight2);
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 90%;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+  header {
+    .navigation {
+      a {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
